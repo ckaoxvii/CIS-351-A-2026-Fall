@@ -1,0 +1,107 @@
+---
+title: "Indexing and Subsetting in R"
+subtitle: ""
+date: ""
+author: ""
+format:
+  html:
+    embed-resources: true
+    code-overflow: wrap
+    number-sections: true
+---
+
+## Load Packages and Data
+
+```{r}
+#| message: false
+library()
+
+library()
+
+library()
+
+library()
+
+dogs <- read_csv() |>
+  clean_names()
+
+earthquakes <- read_csv() |>
+  clean_names()
+
+fastfood <- read_csv() |>
+  clean_names()
+```
+
+## The Index Operators in R
+
+In most modern programming languages, indexing operators are built in, allowing us to access elements in arrays, vectors, and similar data structures. 
+
+### The `$` operator
+
+We have already seen that the `$` operator can be used to extract columns from a data frame in R.
+
+:::{.callout-note icon='false'}
+## Example 1.
+
+Extract the `restaurant` column from the `fastfood` data frame. What are the unique items in this column? How many unique items are there?
+
+_Solution._
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+:::
+
+### The `[]` operator
+
+The `[]` operator in R is used for **subsetting** objects by extracting or selecting elements from vectors, matrcies, data frames, and other objects. It returns a subset of the original object based on specified row and/or column indices, names, or logical conditions.
+
+:::{.callout-note icon='false'}
+## Example 1. (Subsetting by Indices)
+
+Consider the vector
+
+```{r}
+
+```
+
+a. What is the 7th element in the `name` vector?
+b. What are 3rd through the 11th elements in the `name` vector?
+c. What are the 4th through the last element in the `name` vector?
+d. Remove the 1st element from the `name` vector.
+e. Remove the 1st and the 12th elements from the `name` vector.
+_Solutions._
+
+```{r}
+# (a)
+
+```
+
+```{r}
+# (b)
+
+```
+
+```{r}
+# (c)
+
+```
+
+```{r}
+# (d)
+
+```
+
+```{r}
+# (e)
+
+```
+:::
